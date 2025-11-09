@@ -6,7 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Footer from "@/components/footer"
 import { Toaster } from "@/components/ui/sonner"
-import HeroNav from "@/components/HeroNav"
+import { AppProvider } from "@/context/AppProvider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -23,7 +23,8 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          <AppProvider>
           <div className="flex flex-col min-h-screen mb-4">
             <main className="flex-1">
               {children}
@@ -31,6 +32,7 @@ export default async function RootLayout({
             </main>
             <Footer />
           </div>
+          </AppProvider>
         </ThemeProvider>
       </body>
     </html>

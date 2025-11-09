@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, ChevronDown, Search, X, LogOut } from "lucide-react"
+import { Menu, ChevronDown, Search, X, LogOut, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Input } from "@/components/ui/input"
@@ -14,11 +14,12 @@ import ThemeToggle from "@/components/theme-toggle"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation"
+import { useAppContext } from "@/context/AppProvider"
 
 export default function HeroNav() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const { currentUser, setCurrentUser } = useAppContext()
   const router = useRouter()
 
   useEffect(() => {
@@ -34,23 +35,12 @@ export default function HeroNav() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  useEffect(() => {
-    // Check if user is logged in by checking for accessToken cookie
-    const checkLoginStatus = () => {
-      const cookies = document.cookie.split(';')
-      const accessToken = cookies.find(cookie => cookie.trim().startsWith('accessToken='))
-      setIsLoggedIn(!!accessToken)
-    }
-
-    checkLoginStatus()
-    // Listen for storage changes (in case token is set/removed)
-    window.addEventListener('storage', checkLoginStatus)
-    return () => window.removeEventListener('storage', checkLoginStatus)
-  }, [])
+  // Removed the old login status check since we're using context now
 
   const handleLogout = () => {
     document.cookie = 'accessToken=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'
-    setIsLoggedIn(false)
+    document.cookie = 'refreshToken=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'
+    setCurrentUser(null)
     router.push('/')
   }
 
@@ -169,39 +159,52 @@ export default function HeroNav() {
               <ThemeToggle isScrolled={isScrolled} />
 
               {/* User Avatar */}
-              {isLoggedIn ? (
+              {currentUser ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Avatar className="w-9 h-9 cursor-pointer border border-muted-foreground/20 hover:ring-2 hover:ring-rose-500 transition-all duration-300">
                       <AvatarImage src="/images/user-avatar.png" alt="User Avatar" />
-                      <AvatarFallback>A</AvatarFallback>
+                      <AvatarFallback>{currentUser.username?.charAt(0).toUpperCase() || 'U'}</AvatarFallback>
                     </Avatar>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-48">
+                  <DropdownMenuContent align="end" className="w-56 p-3">
+                    <div className="flex flex-col space-y-1 px-2 py-2">
+                      <div className="font-semibold text-base text-foreground">
+                        {currentUser.username?.charAt(0).toUpperCase() + currentUser.username?.slice(1)}
+                      </div>
+                      <div className="text-muted-foreground text-sm font-medium">
+                        {currentUser.email}
+                      </div>
+                    </div>
+                    <DropdownMenuSeparator />
                     <DropdownMenuItem asChild>
                       <Link href="/profile" className="cursor-pointer">
+                        <User className="mr-2 h-4 w-4" />
                         Profile
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem onClick={handleLogout} className="cursor-pointer text-red-600">
                       <LogOut className="mr-2 h-4 w-4" />
-                      Logout
+                      Sign Out
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
                 <div className="hidden md:flex items-center gap-2">
                   <Link href="/sign-in">
-                    <Button variant="ghost" size="sm" className={cn(
-                      "transition-colors",
-                      isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10"
-                    )}>
-                      Sign In
+                    <Button
+                      variant="ghost"
+                      className={cn(
+                        "rounded-full transition-all duration-300",
+                        isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10",
+                      )}
+                    >
+                      Get Started
                     </Button>
                   </Link>
                   <Link href="/sign-up">
-                    <Button size="sm" className="bg-rose-500 hover:bg-rose-600 text-white">
+                    <Button className="bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-glow-sm hover:shadow-glow transition-all duration-300">
                       Sign Up
                     </Button>
                   </Link>
@@ -259,14 +262,24 @@ export default function HeroNav() {
                       </Link>
 
                       <div className="border-t my-4 pt-4">
-                        {isLoggedIn ? (
-                          <Button onClick={handleLogout} variant="destructive" className="w-full">
-                            <LogOut className="mr-2 h-4 w-4" />
-                            Logout
-                          </Button>
+                        {currentUser ? (
+                          <div className="space-y-3">
+                            <div className="flex flex-col space-y-1 px-2 py-2">
+                              <div className="font-semibold text-base text-foreground">
+                                {currentUser.username?.charAt(0).toUpperCase() + currentUser.username?.slice(1)}
+                              </div>
+                              <div className="text-muted-foreground text-sm font-medium">
+                                {currentUser.email}
+                              </div>
+                            </div>
+                            <Button onClick={handleLogout} variant="destructive" className="w-full">
+                              <LogOut className="mr-2 h-4 w-4" />
+                              Sign Out
+                            </Button>
+                          </div>
                         ) : (
                           <>
-                            <Link
+                            {/* <Link
                               href="/sign-in"
                               className="flex items-center text-lg font-medium p-2 hover:bg-muted rounded-lg transition-colors"
                             >
@@ -274,6 +287,23 @@ export default function HeroNav() {
                             </Link>
                             <Link href="/sign-up" className="mt-2">
                               <Button className="w-full bg-rose-500 hover:bg-rose-600 text-white">Sign Up</Button>
+                            </Link>
+ */}
+        <                   Link href="/sign-in">
+                              <Button
+                                variant="ghost"
+                                className={cn(
+                                  "rounded-full transition-all duration-300",
+                                  isScrolled ? "text-foreground hover:bg-muted" : "text-white hover:bg-white/10",
+                                )}
+                              >
+                                Get Started
+                              </Button>
+                            </Link>
+                            <Link href="/sign-up">
+                              <Button className="bg-rose-500 hover:bg-rose-600 text-white rounded-full shadow-glow-sm hover:shadow-glow transition-all duration-300">
+                                Sign Up
+                              </Button>
                             </Link>
                           </>
                         )}

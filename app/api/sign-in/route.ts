@@ -56,11 +56,15 @@ export async function POST(request: Request) {
                 id: user._id,
                 username: user.username,
                 email: user.email,
-                isVerified: user.isVerified
+                isVerified: user.isVerified,
             }
         }, {status: 200});
-        response.cookies.set("accessToken", accessToken);
-        response.cookies.set("refreshToken", refreshToken);
+        response.cookies.set("accessToken", accessToken, {
+            maxAge: 24 * 60 * 60 * 1000 // 1 day
+        });
+        response.cookies.set("refreshToken", refreshToken, {
+            maxAge: 10 * 24 * 60 * 60 * 1000 // 10 days
+        });
         return response;
     } catch (error) {
         console.error("Error while registering the user: ",error)

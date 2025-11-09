@@ -56,7 +56,7 @@ export default function RecipePage({ params }: RecipePageProps) {
         const response = await axios.get(
             `/api/v1/recipes/${slug}`
           );
-        if (!response.ok) {
+        if (!response.success) {
           if (response.status === 404) {
             setError("Recipe not found")
             return
