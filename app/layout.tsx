@@ -10,8 +10,17 @@ import { AppProvider } from "@/context/AppProvider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://recipe-maker-mocha.vercel.app'),
   title: "Cuisine - Modern Recipe Web App",
-  description: "Discover delicious recipes from around the world"
+  description: "Discover delicious recipes from around the world",
+  openGraph: {
+    images: [
+      {
+        url: '/metalogo.png',
+        alt: 'Cuisine Logo',
+      },
+    ],
+  },
 }
 
 export default async function RootLayout({
