@@ -31,6 +31,8 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <AppProvider>
@@ -45,6 +47,7 @@ export default async function RootLayout({
           </AppProvider>
         </ThemeProvider>
       </body>
+      
     </html>
   )
 }

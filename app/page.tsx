@@ -439,7 +439,7 @@ export default function Home() {
 
       {/* Featured Recipes Slider */}
       <section className="py-16 bg-muted/30 dark:bg-muted/10 relative z-10">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -448,14 +448,14 @@ export default function Home() {
             className="flex justify-between items-center mb-10"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-                Featured Recipes
-              </h2>
-              <p className="text-muted-foreground mt-2">Handpicked by our chefs for you to try</p>
+            <h2 className="text-xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              Featured Recipes
+            </h2>
+              <p className="hidden min-[450px]:block text-muted-foreground mt-2">Handpicked by our chefs for you to try</p>
             </div>
             <Link
               href="/recipes"
-              className="text-rose-500 hover:text-rose-600 flex items-center group text-lg font-medium"
+              className="text-rose-500 hover:text-rose-600 flex items-center group text-base md:text-sm font-medium"
             >
               View all
               <ChevronRight size={20} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
@@ -475,14 +475,14 @@ export default function Home() {
           className="flex justify-between items-center mb-10"
         >
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h2 className="text-xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
               Explore Categories
             </h2>
-            <p className="text-muted-foreground mt-2">Discover recipes by cuisine type</p>
+            <p className="hidden min-[450px]:block text-muted-foreground mt-2">Discover recipes by cuisine type</p>
           </div>
           <Link
             href="/categories"
-            className="text-rose-500 hover:text-rose-600 flex items-center group text-lg font-medium"
+            className="text-rose-500 hover:text-rose-600 flex items-center group text-base md:text-sm font-medium"
           >
             View all
             <ChevronRight size={20} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
@@ -491,7 +491,7 @@ export default function Home() {
 
         <div className="overflow-x-auto pb-6 mx-4 px-4 scrollbar-hide">
           <div className="flex space-x-6 min-w-max">
-            {categories.map((category) => (
+            {categories.map((category : any) => (
               <CategoryCard
                 key={category.name}
                 name={category.name}
@@ -516,14 +516,14 @@ export default function Home() {
             className="flex justify-between items-center mb-10"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h2 className="text-xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                 Trending Now
               </h2>
-              <p className="text-muted-foreground mt-2">Most popular recipes this week</p>
+              <p className="hidden min-[450px]:block text-muted-foreground mt-2">Most popular recipes this week</p>
             </div>
             <Link
               href="/trending"
-              className="text-rose-500 hover:text-rose-600 flex items-center group text-lg font-medium"
+              className="text-rose-500 hover:text-rose-600 flex items-center group text-base md:text-sm font-medium"
             >
               View all
               <ChevronRight size={20} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
@@ -561,14 +561,14 @@ export default function Home() {
           className="flex justify-between items-center mb-10"
         >
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h2 className="text-xl md:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
               Popular Breakfast
             </h2>
-            <p className="text-muted-foreground mt-2">Start your day with these amazing recipes</p>
+            <p className="hidden min-[450px]:block text-muted-foreground mt-2">Start your day with these amazing recipes</p>
           </div>
           <Link
             href="/categories/breakfast"
-            className="text-rose-500 hover:text-rose-600 flex items-center group text-lg font-medium"
+            className="text-rose-500 hover:text-rose-600 flex items-center group text-base md:text-sm font-medium"
           >
             View all
             <ChevronRight size={20} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />

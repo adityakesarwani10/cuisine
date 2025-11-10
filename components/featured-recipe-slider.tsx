@@ -90,7 +90,7 @@ export function FeaturedRecipeSlider() {
 
   return (
     <div className="relative overflow-hidden rounded-3xl">
-      <div className="aspect-[21/9] md:aspect-[21/7] w-full relative">
+      <div className="aspect-[11/10] md:aspect-[21/8] w-full relative">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={currentIndex}
@@ -123,7 +123,7 @@ export function FeaturedRecipeSlider() {
 
               <div className="absolute inset-0 flex items-center">
                 <div className="container mx-auto px-4">
-                  <div className="max-w-xl space-y-6">
+                  <div className="max-w-xl space-y-4">
                     <div className="flex gap-2">
                       <Badge className="bg-rose-500 hover:bg-rose-600 text-white border-none">
                         {featuredRecipes[currentIndex].category}
@@ -149,7 +149,7 @@ export function FeaturedRecipeSlider() {
                       </Badge>
                     </div>
                     <motion.h3
-                      className="text-3xl md:text-5xl font-bold text-white"
+                      className="text-2xl md:text-4xl font-bold text-white"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
@@ -157,7 +157,7 @@ export function FeaturedRecipeSlider() {
                       {featuredRecipes[currentIndex].title}
                     </motion.h3>
                     <motion.p
-                      className="text-white/90 text-lg md:text-xl line-clamp-2 md:line-clamp-3"
+                      className="text-white/90 text-sm md:text-lg line-clamp-2 md:line-clamp-3"
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3 }}
@@ -171,11 +171,11 @@ export function FeaturedRecipeSlider() {
                       transition={{ duration: 0.5, delay: 0.4 }}
                     >
                       <div className="flex items-center">
-                        <User size={18} className="mr-2" />
+                        <User size={12} className="mr-2" />
                         {featuredRecipes[currentIndex].chef}
                       </div>
                       <div className="flex items-center">
-                        <Clock size={18} className="mr-2" />
+                        <Clock size={12} className="mr-2" />
                         {featuredRecipes[currentIndex].time}
                       </div>
                     </motion.div>
@@ -185,7 +185,7 @@ export function FeaturedRecipeSlider() {
                       transition={{ duration: 0.5, delay: 0.5 }}
                     >
                       <Link href={featuredRecipes[currentIndex].href}>
-                        <Button className="bg-rose-500 hover:bg-rose-600 text-white rounded-full px-8 py-6 text-lg shadow-glow-sm hover:shadow-glow-lg transition-all duration-300 hover:scale-105">
+                        <Button className="bg-rose-500 hover:bg-rose-600 text-white rounded-full px-4 py-3 text-lg shadow-glow-sm hover:shadow-glow-lg transition-all duration-300 hover:scale-105">
                           View Recipe
                         </Button>
                       </Link>

@@ -36,7 +36,7 @@ export default function RecipeCard({
   return (
     <Link href={href} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <motion.div
-        className="group bg-card dark:bg-card/80 rounded-2xl overflow-hidden border border-border/50 shadow-sm h-full w-72"
+        className="group bg-card dark:bg-card/80 rounded-2xl overflow-hidden border border-border/50 shadow-sm h-full w-64 md:w-72"
         whileHover={{
           y: -10,
           transition: { type: "spring", stiffness: 300 },

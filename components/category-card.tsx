@@ -26,7 +26,7 @@ export default function CategoryCard({ name, image, count, href, icon, className
       onMouseLeave={() => setIsHovered(false)}
     >
       <motion.div
-        className="relative overflow-hidden rounded-2xl aspect-square w-60 group"
+        className="relative overflow-hidden rounded-2xl aspect-square w-52 md:w-60 group"
         whileHover={{
           y: -10,
           transition: { type: "spring", stiffness: 300 },
