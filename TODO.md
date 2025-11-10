@@ -1,10 +1,26 @@
-# TODO: Implement Recipe Backend and Update Frontend
+# Mobile Performance Optimization TODO
 
-## Steps to Complete
+## High Priority
+- [ ] Create mobile detection hook (`hooks/use-mobile.tsx` already exists, verify usage)
+- [ ] Disable hover animations on mobile devices across all components
+- [ ] Reduce FloatingElements count on mobile (currently 15 elements with heavy animations)
+- [ ] Optimize RecipeCard hover effects for mobile
+- [ ] Optimize CategoryCard hover effects for mobile
 
-- [x] Create Recipe model in `model/recipe.model.ts`
-- [x] Create API route for paginated recipes in `app/api/recipes/route.ts`
-- [x] Create API route for single recipe in `app/api/recipes/[slug]/route.ts`
-- [x] Update `app/recipes/[slug]/page.tsx` to use new API routes and implement related recipes section
-- [x] Create POST route for adding recipes to database
-- [ ] Test the API routes and page rendering
+## Medium Priority
+- [ ] Implement lazy loading for recipe cards and category cards
+- [ ] Add mobile-specific image sizes and loading strategies
+- [ ] Reduce FeaturedRecipeSlider animations on mobile
+- [ ] Optimize hero section animations for mobile
+- [ ] Add conditional imports to reduce bundle size on mobile
+
+## Low Priority
+- [ ] Add performance monitoring (Lighthouse scores)
+- [ ] Implement virtual scrolling for recipe lists if needed
+- [ ] Optimize font loading for mobile
+- [ ] Add service worker for caching if applicable
+
+## Testing
+- [ ] Test on actual mobile devices
+- [ ] Measure Core Web Vitals improvements
+- [ ] Verify no functionality loss on mobile

@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight, Clock, User, Leaf, Drumstick } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 const featuredRecipes = [
   {
@@ -48,6 +49,7 @@ export function FeaturedRecipeSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(0)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const isMobile = useIsMobile()
 
   const goToPrevious = () => {
     setDirection(-1)
@@ -60,12 +62,15 @@ export function FeaturedRecipeSlider() {
   }
 
   useEffect(() => {
-    resetTimeout()
-    timeoutRef.current = setTimeout(goToNext, 6000)
+    // Disable auto-play on mobile for better performance
+    if (!isMobile) {
+      resetTimeout()
+      timeoutRef.current = setTimeout(goToNext, 6000)
+    }
     return () => {
       resetTimeout()
     }
-  }, [currentIndex])
+  }, [currentIndex, isMobile])
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -99,7 +104,10 @@ export function FeaturedRecipeSlider() {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{
+            transition={isMobile ? {
+              x: { type: "tween", duration: 0.3 },
+              opacity: { duration: 0.2 },
+            } : {
               x: { type: "spring", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
