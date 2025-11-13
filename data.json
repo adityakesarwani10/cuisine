@@ -10,7 +10,7 @@
     "difficulty": "Medium",
     "rating": 4.8,
     "chef": "Gordon Ramsay",
-    "videoUrl": "https://www.youtube.com/watch?v=E_cB77jaW_I",
+    "videoUrl": "https://youtu.be/E_cB77jaW_I?si=QNHUVCud8L4cpxog",
     "ingredients": [
       "4 salmon fillets (6 oz each)",
       "2 tbsp olive oil",
@@ -48,25 +48,12 @@
     "difficulty": "Medium",
     "rating": 4.5,
     "chef": "Jamie Oliver",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/rTK8MWYYLko?si=cE20svqmVUxXP0RG",
     "ingredients": [
-      "2 tbsp green curry paste",
-      "1 can (400ml) coconut milk",
-      "200g chicken breast, sliced",
-      "1 cup mixed vegetables (bell peppers, eggplant, bamboo shoots)",
-      "2 tbsp fish sauce",
-      "1 tbsp brown sugar",
-      "Fresh basil leaves",
-      "Jasmine rice for serving"
+      "2 teaspoons (4g) coriander seeds", "1 teaspoon (2g) cumin seeds", "1 teaspoon (3g) white peppercorn", "3 serranos, thinly sliced", "9 Thai chilies, thinly sliced", "2 small shallots, finely chopped", "1 lemongrass stalk, rough chopped", "2-inch Galangal, finely chopped", "3 kaffir lime leaves, chiffonade", "7 cloves garlic", "4 springs cilantro stems", "zest of 1 lime", "1/2 teaspoon (4g) dried Thai shrimp paste"
     ],
     "instructions": [
-      "Heat 2 tbsp of thick coconut cream in a wok over medium heat",
-      "Add green curry paste and fry for 1-2 minutes until fragrant",
-      "Add chicken and cook until almost done",
-      "Pour in remaining coconut milk and bring to a simmer",
-      "Add vegetables and cook for 5-7 minutes",
-      "Season with fish sauce and brown sugar",
-      "Garnish with basil leaves and serve with jasmine rice"
+      "2 tablespoons (28g) oil", "All of the green curry paste", "5 cloves garlic, finely chopped", "3/4 cup (177ml) chicken stock", "13.5oz (400ml) full fat coconut milk", "2 tablespoons (30ml) fish sauce", "1 tablespoon (17g) palm sugar", "3/4 lb. (340g) chicken thigh", "1.5 cups (160g) snow peas", "1/2 bunch Thai basil leaves", "2 Thai eggplants", "juice of 1 lime", "steamed rice, for serving", "fried shallots, for garnish", "Thai basil, for garnish", "3 Serrano chilies, thinly sliced, for garnish", "lime wedges, for serving"
     ],
     "isVeg": false,
     "slug": "thai-green-curry"
@@ -82,7 +69,7 @@
     "difficulty": "Easy",
     "rating": 4.9,
     "chef": "Nigella Lawson",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/x5E70W40KNI?si=Q76zcyLllLgeha3X",
     "ingredients": [
       "6 egg yolks",
       "3/4 cup sugar",
@@ -113,7 +100,7 @@
   {
     "title": "Spicy Chicken Pasta",
     "description": "Creamy pasta with tender chicken in a spicy tomato sauce",
-    "image": "/images/recipes/spicy-chicken-pasta.jpg",
+    "image": "/spicy-chicken-pasta.jpg",
     "category": "Italian",
     "prepTime": "15 mins",
     "cookTime": "20 mins",
@@ -121,7 +108,7 @@
     "difficulty": "Medium",
     "rating": 4.8,
     "chef": "Chef Mario",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/QX92OMWicpw?si=1NVl90lVerLxSJS0",
     "ingredients": [
       "12 oz penne pasta",
       "1 lb chicken breast, cubed",
@@ -151,7 +138,7 @@
   {
     "title": "Crispy Chicken Burger",
     "description": "Juicy chicken patty with crispy coating in a soft bun",
-    "image": "/images/recipes/crispy-chicken-burger.jpg",
+    "image": "/crispy-chicken-burger.jpg",
     "category": "Fast Food",
     "prepTime": "15 mins",
     "cookTime": "15 mins",
@@ -159,7 +146,7 @@
     "difficulty": "Easy",
     "rating": 4.7,
     "chef": "Chef John",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/_QaR_E-3zVs?si=LwaB_UZ-TRXBxMqQ",
     "ingredients": [
       "1 lb ground chicken",
       "1 egg",
@@ -188,7 +175,7 @@
   {
     "title": "Vegetable Biryani",
     "description": "Fragrant rice dish with mixed vegetables and aromatic spices",
-    "image": "/images/recipes/vegetable-biryani.jpg",
+    "image": "/vegetable-biryani.jpg",
     "category": "Indian",
     "prepTime": "20 mins",
     "cookTime": "40 mins",
@@ -196,7 +183,7 @@
     "difficulty": "Medium",
     "rating": 4.6,
     "chef": "Chef Priya",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/eKVFofyojmQ?si=UODYHlCLqpN_h8Yr",
     "ingredients": [
       "2 cups basmati rice",
       "2 cups mixed vegetables (carrots, peas, beans, cauliflower)",
@@ -226,7 +213,7 @@
   {
     "title": "Chinese Wok Noodles",
     "description": "Stir-fried noodles with vegetables in savory sauce",
-    "image": "/images/recipes/chinese-wok.jpg",
+    "image": "/chinese-wok.jpg",
     "category": "Chinese",
     "prepTime": "15 mins",
     "cookTime": "10 mins",
@@ -234,7 +221,7 @@
     "difficulty": "Easy",
     "rating": 4.6,
     "chef": "Chef Wang",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/aQHr9Zsnzbw?si=444UrgBjGmPvlEcs",
     "ingredients": [
       "400g egg noodles",
       "2 cups mixed vegetables (bell peppers, carrots, cabbage)",
@@ -263,7 +250,7 @@
   {
     "title": "Chocolate Lava Cake",
     "description": "Decadent chocolate cake with molten center",
-    "image": "/images/recipes/chocolate-lava-cake.jpg",
+    "image": "/chocolate-lava-cake.jpg",
     "category": "Desserts",
     "prepTime": "15 mins",
     "cookTime": "12 mins",
@@ -271,7 +258,7 @@
     "difficulty": "Medium",
     "rating": 4.9,
     "chef": "Chef Pierre",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/PmNtyk8pVRE?si=mNPak1KfHqn_detV",
     "ingredients": [
       "1/2 cup butter",
       "4 oz dark chocolate",
@@ -300,7 +287,7 @@
   {
     "title": "Butter Chicken",
     "description": "Rich and creamy Indian curry with tender chicken",
-    "image": "/images/recipes/butter-chicken.jpg",
+    "image": "/butter-chicken.jpg",
     "category": "Indian",
     "prepTime": "20 mins",
     "cookTime": "35 mins",
@@ -308,7 +295,7 @@
     "difficulty": "Medium",
     "rating": 4.9,
     "chef": "Chef Raj",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/b7yuoRk227Y?si=1gLis8560BOZ-6VN",
     "ingredients": [
       "2 lbs chicken thighs, boneless",
       "1 cup yogurt",
@@ -337,7 +324,7 @@
   {
     "title": "Avocado Toast",
     "description": "Simple and healthy breakfast with creamy avocado on toasted bread",
-    "image": "/images/recipes/avocado-toast.jpg",
+    "image": "/avocado-toast.jpg",
     "category": "Breakfast",
     "prepTime": "5 mins",
     "cookTime": "5 mins",
@@ -345,23 +332,26 @@
     "difficulty": "Easy",
     "rating": 4.5,
     "chef": "Chef Emma",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/0R5km8AQGlI?si=OWJ5YrWFPZ_lYz4u",
     "ingredients": [
-      "2 slices whole grain bread",
-      "1 ripe avocado",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste",
-      "Red pepper flakes (optional)",
-      "Cherry tomatoes, halved",
-      "Fresh basil leaves"
+      "Avocado",
+      "Bread" ,
+      "Lemon" ,
+      "Salt" ,
+      "Pepper" ,
+      "Red chili pepper flakes"
     ],
     "instructions": [
-      "Toast bread until golden brown",
-      "Mash avocado with lemon juice, salt, and pepper",
-      "Spread avocado mixture on toasted bread",
-      "Top with cherry tomatoes and basil",
-      "Sprinkle with red pepper flakes if desired",
-      "Serve immediately"
+      "Cut the avocado by inserting a knife until it hits the seed, then work the knife around the avocado and open it with a twist",
+      "Remove the seed by jabbing a knife into it and twisting",
+      "Scoop out the avocado flesh with a spoon",
+      "Mash the avocado with a fork, leaving it a little chunky for texture",
+      "Toast your bread until it's crispy and evenly browned",
+      "Spread the mashed avocado onto the toast using a fork, ensuring edge-to-edge coverage and a good avocado-to-bread ratio" ,
+      "Squeeze a small amount of lemon juice over the avocado toast" ,
+      "Add a pinch of salt and pepper" ,
+      "Finish with a pinch of red chili pepper flakes for heat",
+      "Optionally, cut the avocado toast in half before serving" 
     ],
     "isVeg": true,
     "slug": "avocado-toast"
@@ -369,7 +359,7 @@
   {
     "title": "Eggs Benedict",
     "description": "Classic breakfast with poached eggs and hollandaise sauce",
-    "image": "/images/recipes/eggs-benedict.jpg",
+    "image": "/eggs-benedict.jpg",
     "category": "Breakfast",
     "prepTime": "15 mins",
     "cookTime": "10 mins",
@@ -377,25 +367,26 @@
     "difficulty": "Medium",
     "rating": 4.7,
     "chef": "Chef Thomas",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/c8T_gtzHa5g?si=7hzMxr6W7gN4yeOq",
     "ingredients": [
-      "4 eggs",
-      "2 English muffins",
-      "4 slices Canadian bacon",
-      "2 egg yolks",
-      "1 tbsp lemon juice",
-      "1/2 cup butter, melted",
-      "Salt and pepper to taste",
-      "Paprika for garnish"
+      "1/4 cup of butter", "4 egg yolks", "1 tbsp of fresh lemon juice", "1/4 teaspoon of salt", "1/8 of a teaspoon of cayenne pepper", "1/8 of a teaspoon of black pepper", "English muffins", "Canadian bacon", "Eggs", "1/4 teaspoon of vinegar", "Fresh chives" 
     ],
     "instructions": [
-      "Poach eggs in simmering water for 3-4 minutes",
-      "Toast English muffins and top with Canadian bacon",
-      "Make hollandaise: whisk egg yolks and lemon juice, slowly add melted butter",
-      "Season hollandaise with salt and pepper",
-      "Place poached eggs on bacon-topped muffins",
-      "Drizzle with hollandaise sauce",
-      "Sprinkle with paprika and serve immediately"
+      "Melt 1/4 cup of butter over medium heat." ,
+"Separate four eggs, using the yolks for the Hollandaise sauce.",
+"Whisk the egg yolks until they are a nice pale yellow color.",
+"Add 1 tablespoon of fresh lemon juice to the egg yolks and whisk in.",
+"Add 1/4 teaspoon of salt, 1/8 of a teaspoon of cayenne pepper (or paprika), and 1/8 of a teaspoon of black pepper to the mixture and whisk in." ,
+"Drizzle the melted butter into the egg yolk mixture while continuously whisking until it thickens up.",
+"Crack fresh eggs into small bowls for poaching." ,
+"Bring a large pot of water to a hard boil, then reduce to a gentle simmer." ,
+"Split English muffins with a fork to create nooks and crannies.",
+"Heat a pan over medium-high heat and cook Canadian bacon for about 2 minutes per side." ,
+"Add 1/4 teaspoon of vinegar to the simmering water for poaching eggs." ,
+"Gently tip each egg into the center of the simmering water and cook for 3 to 5 minutes, depending on desired yolk doneness." ,
+"Pop split English muffins into the toaster until nice and crispy.",
+"Assemble by placing two slices of Canadian bacon on an English muffin, topped with one poached egg, and a generous spoonful of Hollandaise sauce." ,
+"Garnish with fresh chives." 
     ],
     "isVeg": false,
     "slug": "eggs-benedict"
@@ -403,7 +394,7 @@
   {
     "title": "Pancakes with Berries",
     "description": "Fluffy pancakes topped with fresh berries and maple syrup",
-    "image": "/images/recipes/pancakes.jpg",
+    "image": "/pancakes.jpg",
     "category": "Breakfast",
     "prepTime": "10 mins",
     "cookTime": "15 mins",
@@ -411,26 +402,18 @@
     "difficulty": "Easy",
     "rating": 4.8,
     "chef": "Chef Sarah",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/jYgVg6_1rHs?si=B90d10psFN9zsLzd",
     "ingredients": [
-      "2 cups flour",
-      "2 tbsp sugar",
-      "2 tsp baking powder",
-      "1/2 tsp salt",
-      "2 cups milk",
-      "2 eggs",
-      "2 tbsp melted butter",
-      "1 cup mixed berries",
-      "Maple syrup for serving"
+      "1½ cups all-purpose flour", "2 tablespoons sugar", "2 teaspoons baking powder", "1 teaspoon baking soda", "1/2 teaspoon salt",
+      "1 1/2 cups milk or buttermilk", "2 large eggs", "1/4 cup melted butter",
+      "1/2 cup fresh or frozen blueberries"
     ],
     "instructions": [
-      "Mix dry ingredients: flour, sugar, baking powder, salt",
-      "Whisk together milk, eggs, and melted butter",
-      "Combine wet and dry ingredients until just mixed",
-      "Heat griddle or skillet over medium heat",
-      "Pour batter to form pancakes, cook until bubbles form",
-      "Flip and cook until golden brown",
-      "Serve with fresh berries and maple syrup"
+      "In a large mixing bowl, sift together flour, sugar, baking powder, baking soda, and salt.",
+      "Whisk in milk, eggs, and melted butter just until combined. Fold in blueberries." ,
+      "Preheat a flat griddle over medium-high heat.",
+      "Scoop 1/4 cup of pancake batter onto griddle. Let pancakes cook until bubbles form before flipping." ,
+      "Cook other side until golden brown. Serve hot with syrup."
     ],
     "isVeg": true,
     "slug": "pancakes-with-berries"
@@ -438,7 +421,7 @@
   {
     "title": "Breakfast Burrito",
     "description": "Hearty breakfast wrapped in a warm tortilla",
-    "image": "/images/recipes/breakfast-burrito.jpg",
+    "image": "/breakfast-burrito.jpg",
     "category": "Breakfast",
     "prepTime": "15 mins",
     "cookTime": "15 mins",
@@ -446,26 +429,12 @@
     "difficulty": "Medium",
     "rating": 4.6,
     "chef": "Chef Miguel",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/5R_3iuNNUk0?si=TU6_XAG2eppC2Wq0",
     "ingredients": [
-      "4 large eggs",
-      "2 large flour tortillas",
-      "1 cup shredded cheese",
-      "1/2 cup diced tomatoes",
-      "1/2 cup diced onions",
-      "1/2 cup diced bell peppers",
-      "4 slices bacon or sausage",
-      "Salsa for serving",
-      "Sour cream for serving"
+      "Tortillas", "Unsalted butter (3 tablespoons or 42 grams)", "8 eggs", "Salt", "Pepper", "Thick-cut bacon (6-8 glorious slices)", "One large ripe tomato, diced", "One jalapeno, diced (seeds in or out)", "Half a finely diced sweet onion", "Large handful of finely chopped cilantro", "Juice and zest of one lime", "Olive oil", "One to two large russet potatoes, peeled and grated", "Medium sharp cheddar cheese, grated"
     ],
     "instructions": [
-      "Cook bacon or sausage until crispy, set aside",
-      "Scramble eggs with salt and pepper",
-      "Sauté vegetables until tender",
-      "Warm tortillas in microwave or on skillet",
-      "Layer scrambled eggs, cheese, vegetables, and meat on tortillas",
-      "Roll up tightly into burritos",
-      "Serve with salsa and sour cream"
+      "Make your own flour burrito-sized tortillas (1:12-1:34)", "For the scrambled eggs, start with a non-stick skillet over medium heat (1:58-2:05)", "Add 3 tablespoons (42 grams) of unsalted butter to the hot skillet (2:01-2:07)", "Whisk 8 eggs in a bowl until thoroughly combined, no salt yet (2:07-2:10)", "Add eggs to the pan and immediately begin continuously stirring (2:13-2:17)", "Cook until just cooked through and hold together on a spatula, but aren't complete rubber (2:25-2:28)", "Season with salt and pepper to taste (2:30-2:31)", "For the bacon, slice thick-cut bacon into lardons or leave whole (2:49-2:52)", "Place bacon on a foil-lined baking sheet and toss into a cold oven that's completely off (2:54-2:57)", "Set oven to 450°F (232°C) and cook for 20 to 25 minutes or until beautifully browned and lightly crisp (2:59-3:05)", "Alternatively, cook bacon in a pan (3:05-3:06)", "For the Pico de Gallo, in a small bowl, add one large ripe diced tomato, one diced jalapeno, half a finely diced sweet onion, a large handful of finely chopped cilantro, and the juice and zest of one lime (3:08-3:22)", "Add a glug of olive oil and salt and pepper to taste (3:23-3:24)", "Mix until thoroughly combined (3:26-3:28)", "For the hash browns, peel and grate one to two large russet potatoes on a cheese grater (3:31-3:34)", "Rinse under water and then wring out as much moisture as possible in a hand towel (3:35-3:39)", "Heat a medium-sized skillet with enough oil to coat the bottom of the pan over medium heat (3:40-3:45)", "Once hot, press in your potatoes and cook for about three to four minutes (3:45-3:48)", "Flip and repeat on the other side until cooked through and crispy on both sides (3:48-3:52)", "To assemble, lay down a decent layer of scrambled egg on a tortilla (3:58-4:02)", "Add big old chunky bacon (around two slices per burrito) (4:02-4:07)", "Add grated medium sharp cheddar (optionally melt with a kitchen torch) (4:07-4:12)", "Top with Pico de Gallo (4:12-4:14)", "Layer on hash browns to cover the entire thing (4:14-4:17)", "Roll up the burrito by folding in the edges while rolling it up from the bottom until tightly wound (4:21-4:27)", "Griddle in a dry non-stick pan over medium heat for about one to two minutes per side to heat and lightly toast the tortilla (4:30-4:37)"
     ],
     "isVeg": false,
     "slug": "breakfast-burrito"
@@ -473,7 +442,7 @@
   {
     "title": "Smoothie Bowl",
     "description": "Thick smoothie topped with fresh fruits and granola",
-    "image": "/images/recipes/smoothie-bowl.jpg",
+    "image": "/smoothie-bowl.jpg",
     "category": "Breakfast",
     "prepTime": "10 mins",
     "cookTime": "0 mins",
@@ -481,23 +450,12 @@
     "difficulty": "Easy",
     "rating": 4.5,
     "chef": "Chef Lisa",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/f1p6W1bTxQc?si=vmjOYZ2qCC64lGzp",
     "ingredients": [
-      "1 frozen banana",
-      "1/2 cup frozen berries",
-      "1/2 cup yogurt",
-      "1/4 cup almond milk",
-      "1 tbsp honey",
-      "Toppings: granola, fresh berries, coconut flakes",
-      "Chia seeds for garnish"
+      "frozen mango chunks", "banana", "avocado", "lemon juice", "dates", "almond milk"
     ],
     "instructions": [
-      "Blend frozen banana, berries, yogurt, almond milk, and honey",
-      "Blend until thick and creamy",
-      "Pour into a bowl",
-      "Top with granola, fresh berries, and coconut flakes",
-      "Sprinkle with chia seeds",
-      "Serve immediately"
+      "Combine all the ingredients starting with the liquids in your blender", "blend until smooth", "pour into a bowl", "decorate with your favorite toppings" 
     ],
     "isVeg": true,
     "slug": "smoothie-bowl"
@@ -505,7 +463,7 @@
   {
     "title": "French Toast",
     "description": "Golden and crispy bread soaked in egg mixture",
-    "image": "/images/recipes/french-toast.jpg",
+    "image": "/french-toast.jpg",
     "category": "Breakfast",
     "prepTime": "10 mins",
     "cookTime": "10 mins",
@@ -513,23 +471,12 @@
     "difficulty": "Easy",
     "rating": 4.7,
     "chef": "Chef Marie",
-    "videoUrl": "https://youtube.com/watch?v=example",
+    "videoUrl": "https://youtu.be/Y6vsj5GHyt8?si=ne23p1Cz53YaogE-",
     "ingredients": [
-      "8 slices bread",
-      "4 eggs",
-      "1 cup milk",
-      "1 tsp vanilla extract",
-      "1 tsp cinnamon",
-      "2 tbsp butter",
-      "Maple syrup for serving",
-      "Powdered sugar for dusting"
+      "3 whole eggs", "2 egg yolks", "1 teaspoon or 3 grams of ground cinnamon", "half a teaspoon or 3 grams of fine sea salt", "1.5 tablespoons or 23 grams of light brown sugar", "a pinch of fresh grated nutmeg", "half a cup or 120 milliliters of heavy cream", "3/4 cup or 180 milliliters of whole milk", "8-10 slices of brioche or challah bread (3/4 inch thick)", "unsalted butter", "maple syrup", "optional: a pad of butter for serving"
     ],
     "instructions": [
-      "Whisk together eggs, milk, vanilla, and cinnamon",
-      "Dip bread slices in egg mixture, let soak for 30 seconds per side",
-      "Heat butter in a skillet over medium heat",
-      "Cook bread slices until golden brown on both sides",
-      "Serve with maple syrup and powdered sugar"
+      "In a medium-sized bowl, add eggs, egg yolks, cinnamon, salt, brown sugar, and nutmeg.", "Whisk until thoroughly combined.", "Whisk in heavy cream and whole milk to create the custard.", "Dunk bread slices in the custard and let them sit for a few seconds to soak.", "In a large pan, heat over medium heat and grease with unsalted butter.", "Once hot and bubbling, lay in two slices of soaked bread.", "Cook for about 3 minutes or until a nice brown crust forms.", "Optionally, add additional butter at this point.", "Flip and repeat on the other side.", "Transfer finished pieces to a plate and repeat with the remaining bread.", "Serve with a pad of butter on top and maple syrup."
     ],
     "isVeg": true,
     "slug": "french-toast"
