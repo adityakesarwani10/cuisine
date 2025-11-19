@@ -163,11 +163,11 @@ export default function HeroNav() {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Avatar className="w-9 h-9 cursor-pointer border border-muted-foreground/20 hover:ring-2 hover:ring-rose-500 transition-all duration-300">
-                      <AvatarImage src="/images/user-avatar.png" alt="User Avatar" />
+                      <AvatarImage src="/user-avatar.png" alt="User Avatar" />
                       <AvatarFallback>{currentUser.username?.charAt(0).toUpperCase() || 'U'}</AvatarFallback>
                     </Avatar>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-56 p-3">
+                  <DropdownMenuContent align="end" className="w-64 p-3">
                     <div className="flex flex-col space-y-1 px-2 py-2">
                       <div className="font-semibold text-base text-foreground">
                         {currentUser.username?.charAt(0).toUpperCase() + currentUser.username?.slice(1)}
